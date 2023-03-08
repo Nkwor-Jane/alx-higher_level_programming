@@ -6,5 +6,5 @@ def uppercase(str):
             ltou = ord(str[i]) + ord('A') - ord('a')
         else:
             ltou = ord(str[i])
-        print(f"{chr(ltou)}", end='')
+        print("{}".format(chr(ltou)), end='')
     print()
