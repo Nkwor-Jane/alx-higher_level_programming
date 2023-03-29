@@ -6,7 +6,7 @@ class Square:
 	def __init__(self, size=0, position=(0,0)):
 		"""instantiates attributes size and position"""
 		self.__size = size
-		self.__postiont = position
+		self.__position = position
 
 	@property
 	def size(self):
@@ -44,15 +44,17 @@ class Square:
 			if count is 0:
 				self.__position = value
 			else:
-				raise TypeError("position must be a tuple of 2 positive integers"
+				raise TypeError("position must be a tuple of 2 positive integers")
+
 
 	def area(self):
 		"""Returns current square area"""
 		return (self.__size * self.__size)
 		
+
 	def my_print(self):
-		"""print sqaure of size with characte #"""
-		 if self.__size > 0:
+		"""print sqaure of size with character #"""
+		if self.__size > 0:
 			for i in range(self.__position[1]):
 				print()
 			for y in range(self.__size):
@@ -61,6 +63,6 @@ class Square:
 				for x in range(self.__size):
 					print("#", end='')
 				print()
-		else:
-			print()
-		
+			else:
+				print()
+			
