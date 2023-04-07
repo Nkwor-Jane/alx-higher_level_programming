@@ -1,0 +1,53 @@
+doctest for  0-add_integer.py
+
+add_integer = __import__("0-add_integer").add_integer
+
+Correct Usage Examples:
+
+>>> add_integer(1)
+99
+
+>>> add_integer(-1)
+97
+
+>>> add_integer(-1.0)
+97
+
+>>> add_integer(4600, -7)
+4593
+
+>>> add_integer(2**5, 2)
+34
+
+>>> add_integer(-8.5, 5)
+-3
+
+>>> add_integer(2.0**3.0, 5)
+13
+
+Incorrect Usage Examples:
+
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer(2, 3, 4)
+Traceback (most recent call last):
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer("string")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer("string", "another")
+Traceback (most recenet call last):
+TypeError: a must be an integer
+
+>>> add_integer(6, "string")
+Traceback (most recent call last):
+TypeError: b must be an integer
+

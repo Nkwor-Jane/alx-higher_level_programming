@@ -1,0 +1,43 @@
+doctest for  4-print_square.py
+
+>>> print_square = __import__("4-print_square.py").print_square
+
+Correct Usage Examples:
+
+>>> print_square(4)
+####
+####
+####
+####
+
+>>> print_square(2)
+##
+##
+
+Incorrect Usage Examples:
+
+>>> print_square()
+Traceback (most recent call last):
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> print_square(2,3)
+Traceback (most recent call last):
+TypeError: print_square() takes 1 positional argument but 2 were given
+
+>>> print_square(2, 3, 4)
+Traceback (most recent call last):
+TypeError: print_square() takes 1  positional argument but 3 were given
+
+>>> print_square(None)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+>>> print_square("string")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+
+>>> print_square(True)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
